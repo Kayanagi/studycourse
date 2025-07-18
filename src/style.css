@@ -1,0 +1,395 @@
+.dashboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-msg {
+  color: #555;
+}
+
+.form-section,
+.filters,
+.task-list {
+  margin-bottom: 2rem;
+}
+
+.filters select {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #646cff;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.task-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.task-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.badge {
+  background: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.task-actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background-color 0.2s;
+}
+
+.task-actions button:hover {
+  background-color: #bbb;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.3rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #646cff;
+  outline: none;
+}
+
+/* Boutons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Bouton "Ajouter" */
+button[type="submit"],
+button.add-btn {
+  background-color: #646cff;
+  color: white;
+}
+
+button[type="submit"]:hover,
+button.add-btn:hover {
+  background-color: #4b52c1;
+}
+
+/* Bouton Modifier */
+.task-actions button:first-child {
+  background-color: #ffd966;
+}
+
+.task-actions button:first-child:hover {
+  background-color: #e6c24a;
+}
+
+/* Bouton Supprimer */
+.task-actions button:last-child {
+  background-color: #f56c6c;
+  color: white;
+}
+
+.task-actions button:last-child:hover {
+  background-color: #d95454;
+}
+
+input,
+select {
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.subjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.subjects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subjects-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subject-list {
+  margin-bottom: 2rem;
+}
+
+.subject-form {
+  padding: 2rem;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.subject-form .form-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #646cff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.subject-card {
+  background: #ffffff;
+  border-left: 5px solid #646cff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.subject-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.subject-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.4rem 0 0;
+}
+
+.subject-card .actions {
+  margin-top: 0.8rem;
+  text-align: right;
+}
+
+.subject-card .actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f56c6c;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.subject-card .actions button:hover {
+  background-color: #d95454;
+}
+
+.login {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+}
+
+.login-form .form-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #646cff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #646cff;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #4b52c1;
+}
+
+.subjects .form-section {
+  width: 100%;
+  max-width: 600px;
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  align-items: start;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.subjects-header {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .subjects {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-list {
+    order: 2;
+  }
+
+  .form-section {
+    order: 1;
+  }
+}
+
+.switch-mode {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.switch-mode a {
+  color: #646cff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.switch-mode a:hover {
+  text-decoration: underline;
+}
